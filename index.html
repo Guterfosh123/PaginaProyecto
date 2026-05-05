@@ -10,7 +10,10 @@
 
     <header class="header-principal">
         <div class="logo">
-            <a href="index.html">🎮 InicioLogo</a>
+            <a href="index.html">
+                <span class="icono-logo">🎮</span>
+                <span>InicioLogo</span>
+            </a>
         </div>
 
         <nav class="navegacion-principal">
@@ -21,65 +24,206 @@
             </ul>
         </nav>
 
-        <div class="perfil-usuario">
-            <button class="btn-desplegable">Perfil ▼</button>
-            <div class="contenido-desplegable">
-                <a href="login.html">Iniciar Sesión</a>
-                <a href="#">Cerrar Sesión</a>
+        <div class="acciones-header">
+            <input type="text" class="buscador" placeholder="Buscar juegos...">
+
+            <div class="perfil-usuario">
+                <button class="btn-desplegable">Perfil ▼</button>
+                <div class="contenido-desplegable">
+                    <a href="login.html">Iniciar Sesión</a>
+                    <a href="#">Mi Biblioteca</a>
+                    <a href="#">Cerrar Sesión</a>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
+
         <section class="banner-destacado">
-            <h1>Ha llegado el día del juicio.</h1>
-            <p>Nueva expansión ya disponible.</p>
-            <button class="btn-comprar">Comprar</button>
+            <div class="contenido-banner">
+                <span class="etiqueta-banner">Nueva expansión</span>
+                <h1>Ha llegado el día del juicio.</h1>
+                <p>Explora mundos oscuros, completa misiones épicas y consigue recompensas exclusivas.</p>
+
+                <div class="botones-banner">
+                    <button class="btn-comprar">Comprar ahora</button>
+                    <button class="btn-secundario">Ver detalles</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="categorias">
+            <h2>Explora por categoría</h2>
+
+            <div class="contenedor-categorias">
+                <div class="categoria"> Acción</div>
+                <div class="categoria"> RPG</div>
+                <div class="categoria"> Carreras</div>
+                <div class="categoria"> Estrategia</div>
+                <div class="categoria"> Shooter</div>
+                <div class="categoria"> Gratis</div>
+            </div>
         </section>
 
         <section class="juegos-recomendados">
-            <h2>Recomendado</h2>
+            <div class="encabezado-seccion">
+                <div>
+                    <h2>Recomendado</h2>
+                    <p>Los títulos más populares de la semana</p>
+                </div>
+                <a href="#" class="ver-todo">Ver todo</a>
+            </div>
             
             <div class="contenedor-grid-juegos">
+
                 <article class="tarjeta-juego">
-                    <!-- Imagen de WoW -->
-                    <img src="https://imgs.search.brave.com/ucZRlU_nq1eQABcPqoMZpO4-NJ6oue0kyPImoduUXBU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9mZWxi/aXRlLmNvbS93cC1j/b250ZW50L3RoZW1l/cy90aGVtZS9hc3Nl/dHMvaW1hZ2VzL2dh/bWUvZ2FtZS1wb3N0/ZXItd293LXdvdGxr/LmpwZw" alt="World of Warcraft: Wrath of the Lich King">
-                    <h3>World of Warcraft: WotLK (3.3.5a)</h3>
-                    <p>Suscripción / Expansión Clásica</p>
+                    <div class="contenedor-imagen">
+                        <img src="https://imgs.search.brave.com/ucZRlU_nq1eQABcPqoMZpO4-NJ6oue0kyPImoduUXBU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9mZWxi/aXRlLmNvbS93cC1j/b250ZW50L3RoZW1l/cy90aGVtZS9hc3Nl/dHMvaW1hZ2VzL2dh/bWUvZ2FtZS1wb3N0/ZXItd293LXdvdGxr/LmpwZw" alt="World of Warcraft">
+                        <span class="etiqueta-descuento">-20%</span>
+                    </div>
+
+                    <div class="info-juego">
+                        <h3>World of Warcraft: WotLK</h3>
+                        <p>Suscripción / Expansión Clásica</p>
+
+                        <div class="chips">
+                            <span>PC</span>
+                            <span>Online</span>
+                        </div>
+
+                        <div class="fila-precio">
+                            <strong>$249 MXN</strong>
+                            <button>Comprar</button>
+                        </div>
+                    </div>
                 </article>
 
                 <article class="tarjeta-juego">
-                    <!-- Imagen de Diablo IV -->
-                    <img src="https://imgs.search.brave.com/dltkZp98kCvIW2FsDzAaB-fanQeVXnljKotAk-8ZVpU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L2Rp/YWJsby9pbWFnZXMv/Ny83MC9EaWFibG9f/SVZfTG9yZF9vZl9I/YXRyZWRfKDIwMjYp/X2NvdmVyLmpwZy9y/ZXZpc2lvbi9sYXRl/c3Qvc2NhbGUtdG8t/d2lkdGgtZG93bi8y/NjQ_Y2I9MjAyNTEy/MTIwNTE1MzA" alt="Diablo IV">
-                    <span class="etiqueta-nuevo">NUEVO</span>
-                    <h3>Diablo IV: Lord of Hatred</h3>
-                    <p>RPG de Acción</p>
+                    <div class="contenedor-imagen">
+                        <img src="https://imgs.search.brave.com/dltkZp98kCvIW2FsDzAaB-fanQeVXnljKotAk-8ZVpU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L2Rp/YWJsby9pbWFnZXMv/Ny83MC9EaWFibG9f/SVZfTG9yZF9vZl9I/YXRyZWRfKDIwMjYp/X2NvdmVyLmpwZy9y/ZXZpc2lvbi9sYXRl/c3Qvc2NhbGUtdG8t/d2lkdGgtZG93bi8y/NjQ_Y2I9MjAyNTEy/MTIwNTE1MzA" alt="Diablo IV">
+                        <span class="etiqueta-nuevo">NUEVO</span>
+                    </div>
+
+                    <div class="info-juego">
+                        <h3>Diablo IV: Lord of Hatred</h3>
+                        <p>RPG de Acción</p>
+
+                        <div class="chips">
+                            <span>PC</span>
+                            <span>RPG</span>
+                        </div>
+
+                        <div class="fila-precio">
+                            <strong>$899 MXN</strong>
+                            <button>Comprar</button>
+                        </div>
+                    </div>
                 </article>
 
                 <article class="tarjeta-juego">
-                    <!-- Imagen de Legends of Magic -->
-                    <img src="https://imgs.search.brave.com/OyzlRv_dk1wswSKQ31i6S6kxVOT-qKypP-gQeP_DT2E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5qZXV4dmlkZW8u/Y29tL21lZGlhcy1z/bS8xNjE0ODMvMTYx/NDgzMjMyOS0yNzE1/LWphcXVldHRlLWF2/YW50LmpwZw" alt="Juego de Cartas">
-                    <h3>Legends of Magic</h3>
-                    <p>Construye tu mazo competitivo</p>
+                    <div class="contenedor-imagen">
+                        <img src="https://imgs.search.brave.com/OyzlRv_dk1wswSKQ31i6S6kxVOT-qKypP-gQeP_DT2E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5qZXV4dmlkZW8u/Y29tL21lZGlhcy1z/bS8xNjE0ODMvMTYx/NDgzMjMyOS0yNzE1/LWphcXVldHRlLWF2/YW50LmpwZw" alt="Juego de Cartas">
+                    </div>
+
+                    <div class="info-juego">
+                        <h3>Legends of Magic</h3>
+                        <p>Construye tu mazo competitivo</p>
+
+                        <div class="chips">
+                            <span>Cartas</span>
+                            <span>Online</span>
+                        </div>
+
+                        <div class="fila-precio">
+                            <strong>Gratis</strong>
+                            <button>Jugar</button>
+                        </div>
+                    </div>
                 </article>
 
                 <article class="tarjeta-juego">
-                    <!-- Imagen de Overwatch -->
-                    <img src="https://imgs.search.brave.com/W5MNlpMn4KN_eeprn7ZGGjHrRalONASgYfywc_GkfSY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvb3Zl/cndhdGNoLWZlbGl4/YW5kZXItc3V0dG9u/LWhkLTF5dzI5ZjVj/Y2xzY2prdm0uanBn" alt="Overwatch">
-                    <h3>Overwatch 2</h3>
-                    <p>Shooter en equipo</p>
+                    <div class="contenedor-imagen">
+                       <img src="overwatch2.jpg" alt="Overwatch 2">
+                    </div>
+
+                    <div class="info-juego">
+                        <h3>Overwatch 2</h3>
+                        <p>Shooter competitivo en equipo</p>
+
+                        <div class="chips">
+                            <span>Shooter</span>
+                            <span>Multijugador</span>
+                        </div>
+
+                        <div class="fila-precio">
+                            <strong>Gratis</strong>
+                            <button>Jugar</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="ofertas">
+            <div class="contenido-ofertas">
+                <div>
+                    <span class="etiqueta-banner">Oferta especial</span>
+                    <h2>Semana de descuentos</h2>
+                    <p>Encuentra juegos seleccionados con hasta 70% de descuento por tiempo limitado.</p>
+                </div>
+
+                <button class="btn-comprar">Explorar ofertas</button>
+            </div>
+        </section>
+
+        <section class="noticias">
+            <div class="encabezado-seccion">
+                <div>
+                    <h2>Últimas noticias</h2>
+                    <p>Actualizaciones, torneos y novedades de la comunidad</p>
+                </div>
+            </div>
+
+            <div class="contenedor-noticias">
+                <article class="noticia">
+                    <span>Comunidad</span>
+                    <h3>Nuevo torneo semanal disponible</h3>
+                    <p>Compite contra otros jugadores y gana recompensas exclusivas.</p>
+                </article>
+
+                <article class="noticia">
+                    <span>Actualización</span>
+                    <h3>Mejoras en rendimiento</h3>
+                    <p>La plataforma recibe ajustes visuales y mejoras de estabilidad.</p>
+                </article>
+
+                <article class="noticia">
+                    <span>Tienda</span>
+                    <h3>Nuevos paquetes digitales</h3>
+                    <p>Ya puedes encontrar contenido adicional para tus juegos favoritos.</p>
                 </article>
             </div>
         </section>
+
     </main>
 
     <footer class="footer-principal">
-        <p>&copy; 2026 Equipo de Desarrollo - Proyecto de Programación Web. Todos los derechos reservados.</p>
-        <div class="enlaces-footer">
-            <a href="#">Soporte</a>
-            <a href="#">Términos de servicio</a>
-            <a href="#">Privacidad</a>
+        <div class="footer-contenido">
+            <div>
+                <h3>🎮 InicioLogo</h3>
+                <p>Proyecto de Programación Web enfocado en una plataforma visual de videojuegos.</p>
+            </div>
+
+            <div class="enlaces-footer">
+                <a href="#">Soporte</a>
+                <a href="#">Términos de servicio</a>
+                <a href="#">Privacidad</a>
+            </div>
         </div>
+
+        <p class="copyright">&copy; 2026 Equipo de Desarrollo - Proyecto de Programación Web.</p>
     </footer>
 
 </body>
